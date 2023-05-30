@@ -21,16 +21,19 @@
 .left-side {
   width: 50%;
   height: 100%;
-
-  padding-left: 3rem;
+  padding-left: 3.9rem;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
 }
 
+.span {
+  margin-top: 0.3rem;
+  font-size: 0.97rem;
+}
 h1 {
   font-weight: bold;
   font-size: 3rem;
@@ -53,7 +56,7 @@ ul {
   height: 22%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -131,5 +134,5 @@ button:hover {
     rgba(255, 106, 58, 1) 0%,
     rgba(255, 82, 123, 1) 100%
   );
-  box-shadow: rgba(255, 82, 123, 1) 0.2rem 0.2rem 0.2rem;
+  box-shadow: rgba(255, 82, 122, 0.554) 0.2rem 0.2rem 0.2rem;
 }
