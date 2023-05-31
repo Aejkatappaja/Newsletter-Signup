@@ -1,13 +1,20 @@
 import React from "react";
 import Poster from "../assets/img/illustration-sign-up-desktop.svg";
 import List from "../assets/icons/icon-list.svg";
+import Success from "../assets/icons/icon-success.svg";
 
 export const Home = () => {
   const inputMailRef = React.useRef<HTMLInputElement>(null);
+
+  const email = inputMailRef.current?.value;
+
   const [errorMessage, setErrorMessage] = React.useState<string>("");
-  const validEmail = /\S+@\S+\.\S+/;
   const [subscribed, setIsSubscribed] = React.useState<boolean>(false);
+
+  const validEmail = /\S+@\S+\.\S+/;
+
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    setErrorMessage("");
     e.preventDefault();
     if (!inputMailRef.current?.value) {
       setErrorMessage("You must fill input!");
@@ -18,7 +25,10 @@ export const Home = () => {
     }
     setIsSubscribed(true);
     setErrorMessage("");
-    inputMailRef.current.value = "";
+  };
+
+  const onClick = () => {
+    setIsSubscribed(false);
   };
 
   return (
@@ -54,7 +64,7 @@ export const Home = () => {
                     id="email"
                     ref={inputMailRef}
                     type="text"
-                    placeholder="email@company.com"
+                    placeholder={errorMessage ? "" : "email@company.com"}
                     className={!errorMessage ? "input" : "input-error"}
                   />
                 </label>
@@ -62,16 +72,21 @@ export const Home = () => {
               </form>
             </div>
             <div className="right-side">
-              <img
-                src={Poster}
-                alt="poster-orange-red-pink"
-                className="poster"
-              />
+              <img src={Poster} alt="poster-desktop" className="poster" />
             </div>
           </section>
         </>
       ) : (
-        "lol"
+        <section className="subscribed-card">
+          <img src={Success} alt="" />
+          <h1>Thanks for subscribing!</h1>
+          <p>
+            A confirmation email has been sent to{" "}
+            <span className="mail-bold">{email}</span>. Please open it and click
+            the button inside to confirm your subscription.
+          </p>
+          <button onClick={onClick}>Dissmiss message</button>
+        </section>
       )}
     </main>
   );

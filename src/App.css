@@ -35,7 +35,7 @@
   font-size: 0.97rem;
 }
 h1 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 3rem;
 }
 
@@ -49,6 +49,10 @@ h1 {
 
 .poster {
   border-radius: 2rem;
+}
+
+.poster-mobile {
+  display: none;
 }
 
 ul {
@@ -69,7 +73,7 @@ li > img {
   padding-right: 0.5rem;
 }
 p {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 0.8rem;
   padding-bottom: 0.5rem;
   padding-left: 0.2rem;
@@ -89,6 +93,7 @@ label > p {
 
 label > p > span {
   color: var(--Tomato);
+  font-weight: 700;
 }
 
 .input {
@@ -124,7 +129,7 @@ button {
   width: 95%;
   background: var(--Dark-Slate-Grey);
   color: var(--White);
-  font-weight: bold;
+  font-weight: 700;
 }
 
 button:hover {
@@ -135,4 +140,80 @@ button:hover {
     rgba(255, 82, 123, 1) 100%
   );
   box-shadow: rgba(255, 82, 122, 0.554) 0.2rem 0.2rem 0.2rem;
+}
+
+.subscribed-card {
+  width: 28rem;
+  height: 25rem;
+  background-color: var(--White);
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 2rem 2rem 3.5rem;
+}
+
+.subscribed-card > img {
+  width: 3rem;
+}
+
+.subscribed-card > p {
+  font-weight: normal;
+  line-height: 1.7;
+  width: 90%;
+}
+
+.mail-bold {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+  .signup-card {
+    flex-direction: column-reverse;
+    height: 100vh;
+    border-radius: 0;
+  }
+  .left-side {
+    height: 70%;
+    padding: 0;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 0;
+  }
+
+  .right-side {
+    padding: 0;
+    height: 30%;
+    width: 100%;
+    background-image: url(./assets/img/illustration-sign-up-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+
+  .poster {
+    display: none;
+  }
+
+  ul {
+    height: 25%;
+  }
+  li {
+    align-items: flex-start;
+  }
+
+  .subscribed-card {
+    height: 100vh;
+    border-radius: 0;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .subscribed-card > img {
+    margin-top: 3rem;
+  }
+  .subscribed-card > p {
+    margin-bottom: 11rem;
+  }
 }
