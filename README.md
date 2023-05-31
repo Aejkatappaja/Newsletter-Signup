@@ -4,7 +4,7 @@
 ![Desktop Error](src/assets/img/desktop-error-preview.png)
 ![Desktop Success](src/assets/img/desktop-success-preview.png)
 ![Mobile Preview](src/assets/img/mobile-preview.png)
-![Mobile Success](src/assets/img/mobile-success-preview.pngpng)
+![Mobile Success](src/assets/img/mobile-success-preview.png)
 
 ## The challenge
 
