@@ -1,10 +1,10 @@
 # Frontend Mentor - Newsletter sign-up form with success message
 
-![Desktop Preview](/fm-newsletter-signup/src/assets/img/desktop-preview.png)
-![Desktop Error](/fm-newsletter-signup/src/assets/img/desktop-error-preview.png)
-![Desktop Success](/fm-newsletter-signup/src/assets/img/desktop-success-preview.png)
-![Mobile Preview](/fm-newsletter-signup/src/assets/img/mobile-preview.png)
-![Mobile Success](/fm-newsletter-signup/src/assets/img/mobile-success-preview.pngpng)
+![Desktop Preview](src/assets/img/desktop-preview.png)
+![Desktop Error](src/assets/img/desktop-error-preview.png)
+![Desktop Success](src/assets/img/desktop-success-preview.png)
+![Mobile Preview](src/assets/img/mobile-preview.png)
+![Mobile Success](src/assets/img/mobile-success-preview.pngpng)
 
 ## The challenge
 
